@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
 
-  const apiKey = process.env.REACT_APP_API_KEY; // Read API key from .env file
+  const apiKey = 'a7fc04e63ee2d134cc8ef805ebb4e899'; // Read API key from .env file
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
 
