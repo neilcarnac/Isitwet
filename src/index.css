@@ -19,7 +19,7 @@ p {
   font-size: 1.6rem;
 }
 p:hover{
-  transform: scale(1.1);
+  transform: scale(2);
   cursor: pointer;
 }
 
@@ -28,7 +28,7 @@ h1 {
 }
 
 h1 :hover{
-  transform: scale(1.1);
+  transform: scale(2);
   cursor: pointer;
 }
 .app {

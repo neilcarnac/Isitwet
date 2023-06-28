@@ -1,9 +1,11 @@
+
 import React, { useState } from 'react';
 import axios from 'axios';
 
 function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
+
   const apiKey = process.env.REACT_APP_API_KEY; // Read API key from .env file
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
@@ -45,7 +47,7 @@ function App() {
             </div>
           </div>
 
-{data.name != undefined &&
+{data.name !== undefined &&
           <div className="bottom">
           <div className="feels">
             {data.main ?<p className="bold">{data.main.feels_like.toFixed()} °C</p> : <p>-</p>}
