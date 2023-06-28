@@ -8,7 +8,7 @@ function App() {
 
   const apiKey = 'a7fc04e63ee2d134cc8ef805ebb4e899'; // Read API key from .env file
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}`;
 
   const searchLocation = (event) => {
 
